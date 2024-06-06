@@ -1,7 +1,6 @@
+import { ITodo } from "@src/types";
+import { makeId } from "@utils/makeId";
 import { useCallback, useState } from "react";
-import type { ITodo } from "types";
-import { makeId } from "utils/makeId";
-
 const useTodos = () => {
   const [todos, setTodos] = useState<ITodo[]>([]);
   const addTodo = useCallback(
