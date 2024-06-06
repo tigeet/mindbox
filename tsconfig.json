@@ -1,26 +1,27 @@
 {
   "compilerOptions": {
-    "target": "es5",
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
-    ],
-    "allowJs": true,
-    "skipLibCheck": true,
+    "outDir": "./dist/",
+    "baseUrl": "src",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "jsx": "react-jsx",
+    "moduleResolution": "nodenext",
+    "target": "ES2022",
+    "module": "NodeNext",
     "esModuleInterop": true,
-    "allowSyntheticDefaultImports": true,
-    "strict": true,
     "forceConsistentCasingInFileNames": true,
-    "noFallthroughCasesInSwitch": true,
-    "module": "esnext",
-    "moduleResolution": "node",
-    "resolveJsonModule": true,
-    "isolatedModules": true,
-    "noEmit": true,
-    "jsx": "react-jsx"
+    "strict": true,
+    "skipLibCheck": true,
+
+    "allowJs": true,
+    "paths": {
+      "@src/*": ["*"],
+      "@components/*": ["components/*"],
+      "@static/*": ["static/*"],
+      "@pages/*": ["pages/*"],
+      "@utils/*": ["utils/*"],
+      "@hooks/*": ["hooks/*"],
+      "@providers/*": ["providers/*"]
+    }
   },
-  "include": [
-    "src"
-  ]
+  "include": ["src", "declaration.d.ts"]
 }

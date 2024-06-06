@@ -1,0 +1,29 @@
+.todo {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  gap: 8px;
+
+  &-checkbox {
+    flex: 0 0 auto;
+  }
+
+  &-title {
+    font-size: 18px;
+    flex: 1 1 auto;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+
+    &_completed {
+      text-decoration: line-through;
+      color: #808080;
+    }
+  }
+
+  &-date {
+    flex: 0 0 auto;
+    font-size: 12px;
+    white-space: nowrap;
+  }
+}

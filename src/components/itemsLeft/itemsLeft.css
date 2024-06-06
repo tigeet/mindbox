@@ -1,0 +1,36 @@
+.itemsLeft {
+  white-space: nowrap;
+  width: 60px;
+
+  &-value {
+    font-size: 18px;
+    font-weight: 500;
+  }
+
+  &-large {
+    font-size: 16px;
+    display: none;
+  }
+
+  &-small {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4px 12px;
+    font-size: 12px;
+    border-radius: 1000px;
+    background-color: #34aadc;
+  }
+
+  @media screen and (min-width: 578px) {
+    & {
+      width: 100px;
+    }
+    &-large {
+      display: inline;
+    }
+    &-small {
+      display: none;
+    }
+  }
+}

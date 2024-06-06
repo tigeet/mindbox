@@ -1,0 +1,38 @@
+.checkbox {
+  position: relative;
+  display: inline-flex;
+
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.15s linear;
+
+  width: 18px;
+  height: 18px;
+  border-radius: 4px;
+
+  background-color: #f0f0f0;
+  color: #ffffff;
+
+  &_checked {
+    background-color: #008eff;
+  }
+
+  &:hover {
+    background-color: #e8e8e8;
+  }
+
+  &_checked:hover {
+    background-color: #35abff;
+  }
+
+  &-control {
+    position: absolute;
+    left: 0;
+    padding: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+  }
+}
