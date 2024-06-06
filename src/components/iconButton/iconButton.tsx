@@ -10,14 +10,16 @@ type Props = {
   icon?: ReactNode;
   size?: "sm" | "md" | "lg";
   onClick?: MouseEventHandler;
+  role?: string;
   disabled?: boolean;
 };
 
 const IconButton = forwardRef<HTMLButtonElement, Props>(
-  ({ className, icon, onClick, size = "sm", disabled = false }, ref) => {
+  ({ className, icon, onClick, size = "sm", disabled = false, role }, ref) => {
     return (
       <button
         ref={ref}
+        role={role}
         onClick={onClick}
         disabled={disabled}
         className={clsx(className, "center", cnIconButton({ size, disabled }))}

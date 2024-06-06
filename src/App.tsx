@@ -1,7 +1,7 @@
 import React, { useCallback, useMemo, useState } from "react";
 import { cn } from "@bem-react/classname";
 import clsx from "clsx";
-import useTodos from "hooks/useTodos";
+import useTodos from "@hooks/useTodos/useTodos";
 import Todo from "@components/todo/todo";
 import TabSelector from "@components/tabSelector/tabSelector";
 import PlusIcon from "@static/plus.svg";
@@ -75,7 +75,7 @@ function App() {
                 onChange={(e) => setDraft(e.target.value)}
                 placeholder="Title"
               />
-              <IconButton icon={<PlusIcon />} />
+              <IconButton role="submit" icon={<PlusIcon />} />
             </form>
           </section>
 
