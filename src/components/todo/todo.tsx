@@ -1,6 +1,6 @@
 import { cn } from "@bem-react/classname";
 import clsx from "clsx";
-import React, { ChangeEvent, memo, useCallback } from "react";
+import React, { memo } from "react";
 import Checkbox from "@components/checkbox/checkbox";
 import formatDate from "@utils/formatDate";
 

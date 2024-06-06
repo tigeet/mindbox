@@ -3,6 +3,7 @@ import { makeId } from "@utils/makeId";
 import { useCallback, useState } from "react";
 const useTodos = () => {
   const [todos, setTodos] = useState<ITodo[]>([]);
+  
   const addTodo = useCallback(
     (title: string) =>
       setTodos((todos) => [
