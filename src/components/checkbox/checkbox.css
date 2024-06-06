@@ -17,12 +17,14 @@
     background-color: #008eff;
   }
 
-  &:hover {
-    background-color: #e8e8e8;
-  }
+  @media (hover: hover) {
+    &:hover {
+      background-color: #e8e8e8;
+    }
 
-  &_checked:hover {
-    background-color: #35abff;
+    &_checked:hover {
+      background-color: #35abff;
+    }
   }
 
   & > svg {

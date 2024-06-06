@@ -8,9 +8,12 @@
     padding: 4px 8px;
     border-radius: 4px;
     transition: background 0.3s ease;
-    &:hover {
-      background-color: #d4d4d4;
-      transition: background 0.3s ease;
+
+    @media (hover: hover) {
+      &:hover {
+        background-color: #d4d4d4;
+        transition: background 0.3s ease;
+      }
     }
   }
 
