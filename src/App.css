@@ -9,11 +9,15 @@
     left: 0;
     z-index: 10000;
     background-color: #ffffff;
-    padding: 8px 32px;
+    padding: 8px;
     display: flex;
     align-items: center;
     box-shadow: 4px 4px 10px #dad8d8;
     justify-content: space-between;
+
+    @media screen and (min-width: 578px) {
+      padding: 8px 32px;
+    }
   }
 
   &-tabSelector {
@@ -29,10 +33,10 @@
   }
 
   &-content {
-    padding: 16px;
+    padding: 32px;
     width: 100%;
     display: flex;
-    gap: 16px;
+    gap: 24px;
     flex-direction: column;
 
     @media screen and (min-width: 578px) {
