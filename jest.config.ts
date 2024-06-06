@@ -1,8 +1,3 @@
-/**
- * For a detailed explanation regarding each configuration property, visit:
- * https://jestjs.io/docs/configuration
- */
-
 import type { Config } from "jest";
 
 const config: Config = {
@@ -12,6 +7,9 @@ const config: Config = {
     "^@components/(.*)$": "<rootDir>/src/components/$1",
     "^@hooks/(.*)$": "<rootDir>/src/hooks/$1",
     "^@utils/(.*)$": "<rootDir>/src/utils/$1",
+
+    "\\.svg$": "<rootDir>/__mocks__/svg.js",
+    "\\.(css|less|scss|sass)$": "<rootDir>/__mocks__/css.js",
   },
 
   testEnvironment: "jsdom",
