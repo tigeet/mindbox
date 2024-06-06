@@ -25,6 +25,11 @@
     background-color: #35abff;
   }
 
+  & > svg {
+    display: flex;
+    width: 18px;
+    height: 18px;
+  }
   &-control {
     position: absolute;
     left: 0;
