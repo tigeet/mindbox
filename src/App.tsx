@@ -11,7 +11,7 @@ import ClearButton from "@components/clearButton/clearButton";
 
 import "./reset.css";
 import "./global.css";
-import "./app.css";
+import "./App.css";
 
 const VIEW = ["all", "active", "completed"] as const;
 type TView = (typeof VIEW)[number];

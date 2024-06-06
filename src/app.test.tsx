@@ -1,8 +1,7 @@
 import React from "react";
-import { render, fireEvent, screen, Screen } from "@testing-library/react";
+import { render, fireEvent, screen } from "@testing-library/react";
 import "@testing-library/jest-dom/extend-expect";
-import App from "./app";
-import { container } from "webpack";
+import App from "./App";
 
 const addTodo = (value: string) => {
   const inputField = screen.getByPlaceholderText("Title");
